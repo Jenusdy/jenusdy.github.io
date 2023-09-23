@@ -10,7 +10,7 @@ I wear multiple hats: I'm the Android App Dev, the Spatial Analyst, and a Fullst
 My academic journey led me to [Sekolah Tinggi Ilmu Statistik][stis], 
 where I geeked out on Computational Statistics. 
 Now, I'm all about turning numbers into insights. 
-If you're into cool data projects or just want to chat tech, let's connect 🚀
+If you're into cool data projects or just want to chat tech, let's connect 
 
 
 [bps]: https://www.bps.go.id/

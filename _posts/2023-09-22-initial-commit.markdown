@@ -2,7 +2,7 @@
 layout: post
 title:  "Initial commit!"
 date:   2023-09-22 18:41:05 +0700
-categories: first post
+categories: post
 ---
 
 Hello World. 

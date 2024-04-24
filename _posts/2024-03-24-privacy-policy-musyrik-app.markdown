@@ -2,7 +2,7 @@
 layout: post
 title:  "Privacy Policy Musyrik App"
 date:   2024-03-24 18:41:05 +0700
-categories: first post
+categories: post
 ---
 
 **Privacy Policy**

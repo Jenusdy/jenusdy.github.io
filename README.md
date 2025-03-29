@@ -2,7 +2,7 @@
 
 #### Github for My Portfolio page
 
-This is my portfolio page using [Live Demo on Gatsby Cloud](https://www.gatsbyjs.com/) with [Portfolio Minimal Theme](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal)
+This is my portfolio page using [Gatsby.JS](https://www.gatsbyjs.com/) with [Portfolio Minimal Theme](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal)
 
 ---
 
@@ -29,4 +29,4 @@ This is my portfolio page using [Live Demo on Gatsby Cloud](https://www.gatsbyjs
 
 ---
 
-Credit to : Konstantin Münster – [konstantin.digital](https://konstantin.digital)
+Credit to Konstantin Münster – [konstantin.digital](https://konstantin.digital)

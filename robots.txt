@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://jenusdy.github.io/sitemap-index.xml
+Host: https://jenusdy.github.io

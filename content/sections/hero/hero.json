@@ -1,22 +1,22 @@
 {
-  "intro": "Hej",
+  "intro": "Hi",
   "heroPhoto": {
-    "src": "../../images/lego-dummy.png",
+    "src": "../../images/jenusdy.jpg",
     "alt": "My Photo"
   },
   "image": {
     "src": "../../images/waving-hand.png",
     "alt": "Waving Hand Emoji"
   },
-  "title": "I'm a Gatsby Starter",
+  "title": "I'm Fawcet Jenusdy Makay",
   "subtitle": {
-    "prefix": "I do all the setup ",
-    "highlight": "for you",
+    "prefix": "",
+    "highlight": "Newbie Programmer",
     "suffix": "."
   },
-  "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
+  "description": "Interested in Software Engineering on weekdays and Cyber Security at weekends",
   "socialProfiles": {
     "from": ["LinkedIn", "Medium", "Github", "Mail"],
-    "showIcons": false
+    "showIcons": true
   }
 }

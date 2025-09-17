@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # Development service
+  gatsby-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run develop -- --host 0.0.0.0 --port 8000
+
+  # Production service
+  gatsby-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    environment:
+      - NODE_ENV=production

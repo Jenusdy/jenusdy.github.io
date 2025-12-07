@@ -16,7 +16,9 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "Jenusdy" },
+    "logo": {
+      "text": "Jenusdy FM"
+    },
     "navigation": {
       "header": [
         { "label": "Home", "url": "/#" },
@@ -27,8 +29,7 @@
         "label": "Resume",
         "url": "/Resume - Fawcet Jenusdy Makay.pdf"
       },
-      "footer": [
-      ]
+      "footer": []
     },
     "featureToggles": {
       "useDarkModeAsDefault": false,

@@ -1,5 +1,5 @@
 ---
-imageSrc: "../../images/jenusdy.webp"
+imageSrc: "../../images/jenusdy_2.jpg"
 imageAlt: "About Me"
 ---
 

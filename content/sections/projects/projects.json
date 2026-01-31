@@ -2,6 +2,46 @@
   "projects": [
     {
       "visible": true,
+      "category": "Web",
+      "title": "WebGIS Banjir Sumatera",
+      "description": "Aplikasi WebGIS untuk pemetaan sebaran dan dampak banjir di pulau Sumatera, Indonesia dengan peta interaktif, multi-layer, dan legenda dinamis.",
+      "tags": ["Vue 3", "Leaflet.js", "TailwindCSS", "Vite"],
+      "image": {
+        "src": "../../images/projects/webgis-banjir-sumatera.png",
+        "alt": "WebGIS Banjir Sumatera",
+        "linkTo": "https://sig.bps.go.id/webgis-banjir-sumatera/"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Jenusdy/webgis-banjir-sumatera"
+        },
+        {
+          "type": "external",
+          "url": "https://sig.bps.go.id/webgis-banjir-sumatera/"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "Application",
+      "title": "Geotagging UMKM Halal",
+      "description": "Android application for managing and supporting UMKM Halal certification processes with geotagging features, built using MVVM architecture and Room for local data storage.",
+      "tags": ["Kotlin", "Android", "MVVM", "Room"],
+      "image": {
+        "src": "../../images/projects/geotagging-umkm.png",
+        "alt": "Geotagging UMKM Halal",
+        "linkTo": "https://github.com/Jenusdy/geotagging-umkm"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Jenusdy/geotagging-umkm"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "Application",
       "title": "Peta WS QR Rename",
       "description": "PetaWSRename-QR is a project used to rename WS maps using OCR and QR codes found in the map layout output BPS.",
@@ -19,7 +59,7 @@
       ]
     },
     {
-      "visible": true,
+      "visible": false,
       "category": "Application",
       "title": "Flashcards TBS Verbal",
       "description": "A flashcards app for TBS Verbal - Sinonim built with Vue and Vite.",

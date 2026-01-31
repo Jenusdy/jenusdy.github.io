@@ -12,6 +12,7 @@ public
 
 #development
 .cache
+.claude
 .husky
 .vscode
 

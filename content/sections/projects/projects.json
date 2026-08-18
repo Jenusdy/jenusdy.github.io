@@ -2,6 +2,24 @@
   "projects": [
     {
       "visible": true,
+      "category": "Application",
+      "title": "Authenticator Client",
+      "description": "Secure, modern, and offline desktop application built on Electron for managing Two-Factor Authentication (2FA) tokens (TOTP) with a glassmorphic cyber-themed interface.",
+      "tags": ["Electron", "HTML5", "CSS", "JavaScript"],
+      "image": {
+        "src": "../../images/projects/authenticator-client.png",
+        "alt": "Authenticator Client",
+        "linkTo": "https://github.com/Jenusdy/authenticator-client"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Jenusdy/authenticator-client"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "Web",
       "title": "WebGIS Banjir Sumatera",
       "description": "Aplikasi WebGIS untuk pemetaan sebaran dan dampak banjir di pulau Sumatera, Indonesia dengan peta interaktif, multi-layer, dan legenda dinamis.",

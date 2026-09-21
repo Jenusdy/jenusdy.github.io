@@ -1,0 +1,23 @@
+.CommentSection {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(140, 140, 140, 0.25);
+  width: 100%;
+}
+
+.Title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.Subtitle {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 2rem;
+}
+
+.CommentsContainer {
+  min-height: 200px;
+  width: 100%;
+}

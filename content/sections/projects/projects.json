@@ -2,6 +2,24 @@
   "projects": [
     {
       "visible": true,
+      "category": "Web",
+      "title": "S3 Web Browser",
+      "description": "A lightweight web browser for AWS S3 and S3-compatible storage (MinIO, Wasabi, Ceph). Manage multiple connections with drag-and-drop uploads, parallel size calculations, and instant ZIP exports.",
+      "tags": ["Python", "Flask", "AWS S3", "Docker", "Boto3"],
+      "image": {
+        "src": "../../images/projects/s3-web-browser.png",
+        "alt": "S3 Web Browser",
+        "linkTo": "https://github.com/Jenusdy/s3-web-browser"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Jenusdy/s3-web-browser"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "Application",
       "title": "Authenticator Client",
       "description": "Secure, modern, and offline desktop application built on Electron for managing Two-Factor Authentication (2FA) tokens (TOTP) with a glassmorphic cyber-themed interface.",
@@ -61,18 +79,18 @@
     {
       "visible": true,
       "category": "Application",
-      "title": "Peta WS QR Rename",
-      "description": "PetaWSRename-QR is a project used to rename WS maps using OCR and QR codes found in the map layout output BPS.",
-      "tags": ["Python", "OpenCV"],
+      "title": "Auto Georeference WSS",
+      "description": "Aplikasi GUI dan CLI berbasis Python untuk otomatisasi rename (OCR) dan georeferensi peta layout WSS BPS menggunakan RapidOCR, OpenCV, dan GeoJSON.",
+      "tags": ["Python", "OpenCV", "PyQt5", "RapidOCR", "GIS"],
       "image": {
-        "src": "../../images/projects/peta-ws-qr-rename.png",
-        "alt": "Peta WS QR Rename",
-        "linkTo": "https://github.com/Jenusdy/PetaWSRename-QR"
+        "src": "../../images/projects/auto-georeference-wss.png",
+        "alt": "Auto Georeference WSS",
+        "linkTo": "https://github.com/Jenusdy/auto-georeference-wss"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/Jenusdy/PetaWSRename-QR"
+          "url": "https://github.com/Jenusdy/auto-georeference-wss"
         }
       ]
     },

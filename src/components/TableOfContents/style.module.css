@@ -1,0 +1,290 @@
+/* ==========================================================================
+   Mobile Table of Contents
+   ========================================================================== */
+.MobileTocWrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.MobileTocToggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--base-font);
+    color: var(--text-color);
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.MobileTocToggle:hover,
+.MobileTocToggle:focus-visible {
+    border-color: var(--subtext-color);
+}
+
+.MobileTocHeaderLeft {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.MobileTocTitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--primary-color);
+}
+
+.MobileTocBadge {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    background-color: var(--tertiary-color);
+    color: var(--subtext-color);
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.MobileTocChevron {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--subtext-color);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.MobileTocChevron.Open {
+    transform: rotate(180deg);
+    color: var(--primary-color);
+}
+
+.MobileTocContent {
+    margin-top: 0.5rem;
+    padding: 0.875rem 1rem;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: var(--border-radius);
+    max-height: 55vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--tertiary-color) transparent;
+}
+
+.MobileTocList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid var(--tertiary-color);
+}
+
+.MobileTocItem {
+    margin: 0;
+    position: relative;
+}
+
+.MobileTocItem.Level1 {
+    margin-top: 0.35rem;
+}
+
+.MobileTocItem.Level1:first-child {
+    margin-top: 0;
+}
+
+.MobileTocItem.Level2 {
+    margin-top: 0.2rem;
+}
+
+.MobileTocItem.Level3 {
+    margin-top: 0.15rem;
+}
+
+.MobileTocLink {
+    display: block;
+    color: var(--subtext-color);
+    text-decoration: none;
+    line-height: 1.45;
+    padding: 0.3rem 0.5rem 0.3rem 0.75rem;
+    margin-left: -2px;
+    border-left: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    word-break: break-word;
+}
+
+.MobileTocItem.Level1 .MobileTocLink {
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+.MobileTocItem.Level2 .MobileTocLink {
+    font-size: 0.75rem;
+    padding-left: 1.25rem;
+}
+
+.MobileTocItem.Level3 .MobileTocLink {
+    font-size: 0.6875rem;
+    padding-left: 1.75rem;
+}
+
+.MobileTocLink:hover {
+    color: var(--primary-color);
+}
+
+.MobileTocItem.Active > .MobileTocLink {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+    border-left-color: var(--primary-color) !important;
+}
+
+/* ==========================================================================
+   Desktop Sticky Table of Contents
+   ========================================================================== */
+.DesktopTocCard {
+    width: 100%;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1rem 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 8rem);
+    box-sizing: border-box;
+}
+
+.DesktopTocHeader {
+    padding-bottom: 0.625rem;
+    margin-bottom: 0.625rem;
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+.DesktopTocTitle {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--subtext-color);
+}
+
+.DesktopTocNav {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--tertiary-color) transparent;
+}
+
+.DesktopTocNav::-webkit-scrollbar {
+    width: 3px;
+}
+
+.DesktopTocNav::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.DesktopTocNav::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color);
+    border-radius: 3px;
+}
+
+.DesktopTocNav::-webkit-scrollbar-thumb:hover {
+    background-color: var(--subtext-color);
+}
+
+.DesktopTocList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid var(--tertiary-color);
+}
+
+.DesktopTocItem {
+    margin: 0;
+    position: relative;
+}
+
+.DesktopTocItem.Level1 {
+    margin-top: 0.4rem;
+}
+
+.DesktopTocItem.Level1:first-child {
+    margin-top: 0;
+}
+
+.DesktopTocItem.Level2 {
+    margin-top: 0.2rem;
+}
+
+.DesktopTocItem.Level3 {
+    margin-top: 0.15rem;
+}
+
+.DesktopTocLink {
+    display: block;
+    color: var(--subtext-color);
+    line-height: 1.45;
+    padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+    margin-left: -2px;
+    border-left: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.DesktopTocItem.Level1 .DesktopTocLink {
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+.DesktopTocItem.Level2 .DesktopTocLink {
+    font-size: 0.75rem;
+    padding-left: 1.25rem;
+}
+
+.DesktopTocItem.Level3 .DesktopTocLink {
+    font-size: 0.6875rem;
+    padding-left: 1.75rem;
+}
+
+.DesktopTocLink:hover {
+    color: var(--primary-color);
+}
+
+.DesktopTocItem.Active > .DesktopTocLink {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+    border-left-color: var(--primary-color) !important;
+}
+
+.DesktopTocFooter {
+    margin-top: 0.75rem;
+    padding-top: 0.625rem;
+    border-top: 1px solid var(--tertiary-color);
+}
+
+.BackToTopBtn {
+    background: none;
+    border: none;
+    padding: 0.2rem 0;
+    color: var(--subtext-color);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    font-family: var(--base-font);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: color 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.BackToTopBtn:hover {
+    color: var(--primary-color);
+}

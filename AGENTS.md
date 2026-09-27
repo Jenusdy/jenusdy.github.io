@@ -41,9 +41,10 @@ Dokumen ini berisi ringkasan arsitektur, struktur proyek, workflow, serta pandua
 │
 ├── src/
 │   ├── components/
-│   │   └── CommentSection/      # Komponen komentar blog (Giscus / Utterances)
+│   │   ├── CommentSection/      # Komponen komentar blog (Giscus / Utterances)
+│   │   └── TableOfContents/     # Komponen daftar isi otomatis (TOC & scrollspy)
 │   ├── gatsby-theme-portfolio-minimal/ # Shadowed template & komponen tema
-│   │   └── templates/Article/   # Template artikel yang di-extend untuk komentar
+│   │   └── templates/Article/   # Template artikel yang di-extend untuk komentar & TOC
 │   └── pages/                   # Template halaman Gatsby
 │       ├── index.js             # Halaman beranda utama (menggabungkan komponen section)
 │       ├── imprint.js           # Halaman Imprint / Legal Notice
@@ -175,6 +176,16 @@ Fitur komentar disematkan di setiap halaman artikel blog menggunakan sistem kome
 4. **Langkah Aktivasi di GitHub:**
    - Aktifkan GitHub Discussions: *GitHub Repository > Settings > Features > centang Discussions*.
    - Pasang Giscus GitHub App: [https://github.com/apps/giscus](https://github.com/apps/giscus) dan izinkan akses ke repo `jenusdy.github.io`.
+
+### G. Fitur Daftar Isi Otomatis (Table of Contents)
+Daftar isi otomatis disematkan di setiap halaman artikel blog untuk mempermudah navigasi pembaca:
+1. **Komponen:** [`src/components/TableOfContents/`](src/components/TableOfContents/)
+   - **Desktop (`>= 1100px`):** Ditampilkan sebagai sticky sidebar di sisi kanan artikel (`position: sticky`).
+   - **Mobile / Tablet (`< 1100px`):** Ditampilkan sebagai collapsible card (dropdown pill) di bagian atas konten artikel.
+2. **Ekstraksi Headings & Slug Resolving:** Fungsi `processArticleBody` mengekstrak tag `h1`, `h2`, dan `h3` dari HTML artikel, menghasilkan ID unik (menghindari duplikasi slug dengan sufiks `-1`, `-2`), serta menyuntikkan atribut `id` langsung ke dalam tag heading.
+3. **Smooth Scroll & Scrollspy:**
+   - Klik pada link TOC memicu smooth scrolling ke heading dengan offset `scroll-margin-top: 5.5rem` agar judul tidak tertutup fixed header.
+   - Observer scrollspy secara real-time menandai subjudul aktif saat pembaca melakukan scrolling pada halaman artikel.
 
 ---
 

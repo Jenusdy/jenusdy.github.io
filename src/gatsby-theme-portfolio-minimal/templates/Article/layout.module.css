@@ -1,0 +1,89 @@
+.ArticlePageWrapper {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: var(--page-padding);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.ArticleColumn {
+    width: 100%;
+    max-width: 740px;
+    min-width: 0;
+    flex: 1 1 740px;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+.TocSidebar {
+    width: 260px;
+    flex: 0 0 260px;
+    position: sticky;
+    top: 5rem;
+    max-height: calc(100vh - 6rem);
+    display: block;
+    box-sizing: border-box;
+}
+
+.MobileTocSection {
+    display: none;
+}
+
+/* Headings scroll margin so smooth scroll does not get hidden under sticky elements */
+.ArticleColumn :global(h1[id]),
+.ArticleColumn :global(h2[id]),
+.ArticleColumn :global(h3[id]),
+.ArticleColumn :global(h4[id]) {
+    scroll-margin-top: 5.5rem;
+}
+
+/* Ensure code blocks, tables, and media don't cause horizontal overflow */
+.ArticleColumn :global(pre) {
+    max-width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+.ArticleColumn :global(table) {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+.ArticleColumn :global(img) {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1099px) {
+    .ArticlePageWrapper {
+        max-width: 740px;
+        display: block;
+    }
+
+    .ArticleColumn {
+        max-width: 100%;
+    }
+
+    .TocSidebar {
+        display: none;
+    }
+
+    .MobileTocSection {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 580px) {
+    .ArticlePageWrapper {
+        padding: 0 1.25rem;
+    }
+}

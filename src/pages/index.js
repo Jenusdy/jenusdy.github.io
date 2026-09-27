@@ -1,13 +1,13 @@
 import React from "react";
 import {
   AboutSection,
-  ArticlesSection,
   HeroSection,
   InterestsSection,
   Page,
   ProjectsSection,
   Seo,
 } from "gatsby-theme-portfolio-minimal";
+import { ArticlesSection } from "../gatsby-theme-portfolio-minimal/sections/Articles";
 
 export default function IndexPage() {
   return (

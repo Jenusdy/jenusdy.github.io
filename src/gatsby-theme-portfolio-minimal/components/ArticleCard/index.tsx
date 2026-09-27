@@ -32,6 +32,7 @@ interface ArticleCardProps {
 export function ArticleCard(props: ArticleCardProps): React.ReactElement {
     const { globalState } = useGlobalState();
     const darkModeEnabled = globalState.theme === Theme.Dark;
+    const showBanner = props.showBanner ?? true;
 
     // Needed to differentiate between external and internal links (whether or not we use Gatsby Link)
     const absoluteUrl = props.data.link.indexOf('://') > 0 || props.data.link.indexOf('//') === 0;
@@ -39,19 +40,20 @@ export function ArticleCard(props: ArticleCardProps): React.ReactElement {
     const articleCard = (
         <article
             className={classes.Card}
-            style={darkModeEnabled ? { border: '0.125rem solid var(--primary-color)' } : undefined}
+            style={{
+                overflow: 'hidden',
+                ...(darkModeEnabled ? { border: '0.125rem solid var(--primary-color)' } : {}),
+            }}
         >
-            {props.showBanner && (
+            {showBanner && props.data.image && props.data.image.src && (
                 <div className={classes.Banner}>
-                    {props.data.image && props.data.image.src && (
-                        <GatsbyImage
-                            className={classes.ImageWrapper}
-                            imgClassName={classes.Image}
-                            objectFit={props.data.image.objectFit || 'cover'}
-                            image={props.data.image.src.childImageSharp.gatsbyImageData}
-                            alt={props.data.image.alt || props.data.title}
-                        />
-                    )}
+                    <GatsbyImage
+                        className={classes.ImageWrapper}
+                        imgClassName={classes.Image}
+                        objectFit={props.data.image.objectFit || 'cover'}
+                        image={props.data.image.src.childImageSharp.gatsbyImageData}
+                        alt={props.data.image.alt || props.data.title}
+                    />
                 </div>
             )}
             <div className={classes.DescriptionWrapper}>

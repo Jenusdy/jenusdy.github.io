@@ -2,6 +2,9 @@
 title: "Privacy Policy — GeoCam (Geospatial Photo Documentation)"
 description: "Privacy Policy for GeoCam, an Android geospatial photo documentation application. Explains how camera, precise location, local storage, and Google Maps services are used."
 date: "2026-11-13"
+banner:
+  src: "../../images/articles/geocam-privacy-policy/thumbnail.jpg"
+  alt: "GeoCam Privacy Policy Thumbnail"
 categories:
   - "Privacy Policy"
   - "Android"
